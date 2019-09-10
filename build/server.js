@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "2813fa40096408900b34";
+/******/ 	var hotCurrentHash = "a5247729c0878e25ad40";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1060,7 +1060,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_config__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
 /* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/home/rohanrana/Documents/Rohan /razzel-app/src/App.js";
+var _jsxFileName = "/home/rohanrana/Documents/Rohan /react-redux-with-ssr/src/App.js";
 
  // import 'semantic-ui-css/semantic.min.css'
 
@@ -1132,7 +1132,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/rohanrana/Documents/Rohan /razzel-app/src/Home.js";
+var _jsxFileName = "/home/rohanrana/Documents/Rohan /react-redux-with-ssr/src/Home.js";
 
 
 
@@ -1322,7 +1322,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/rohanrana/Documents/Rohan /razzel-app/src/containers/Matches/index.js";
+var _jsxFileName = "/home/rohanrana/Documents/Rohan /react-redux-with-ssr/src/containers/Matches/index.js";
 
 
 
@@ -1788,7 +1788,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_config__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_router_config__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-helmet */ "react-helmet");
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "/home/rohanrana/Documents/Rohan /razzel-app/src/renderer.js";
+var _jsxFileName = "/home/rohanrana/Documents/Rohan /react-redux-with-ssr/src/renderer.js";
 
 
 
@@ -1847,7 +1847,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var server = express__WEBPACK_IMPORTED_MODULE_0___default()();
-server.disable("x-powered-by").use(express__WEBPACK_IMPORTED_MODULE_0___default.a["static"]("/home/rohanrana/Documents/Rohan /razzel-app/public")).get("*", function (req, res) {
+server.disable("x-powered-by").use(express__WEBPACK_IMPORTED_MODULE_0___default.a["static"]("/home/rohanrana/Documents/Rohan /react-redux-with-ssr/public")).get("*", function (req, res) {
   // console.log("REQ STORE",req)
   var store = Object(_redux_store__WEBPACK_IMPORTED_MODULE_3__["default"])(req);
   var promises = Object(react_router_config__WEBPACK_IMPORTED_MODULE_1__["matchRoutes"])(_Routes__WEBPACK_IMPORTED_MODULE_2__["default"], req.path).map(function (_ref) {
@@ -1929,7 +1929,7 @@ server.disable("x-powered-by").use(express__WEBPACK_IMPORTED_MODULE_0___default.
 
 __webpack_require__(/*! razzle-dev-utils/prettyNodeErrors */"razzle-dev-utils/prettyNodeErrors");
 __webpack_require__(/*! webpack/hot/poll?300 */"./node_modules/webpack/hot/poll.js?300");
-module.exports = __webpack_require__(/*! /home/rohanrana/Documents/Rohan /razzel-app/src */"./src/index.js");
+module.exports = __webpack_require__(/*! /home/rohanrana/Documents/Rohan /react-redux-with-ssr/src */"./src/index.js");
 
 
 /***/ }),
