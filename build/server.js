@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "52ae500bf10c38914440";
+/******/ 	var hotCurrentHash = "f10b3134a03e116c5100";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1104,21 +1104,9 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
- // refactoring code for ssr
-// export default () => {
-//   return <div>
-//     <Route exact path="/" component={Home} />
-//     <Route path='/users' component={usersList}/>
-//   </div>;
-// };
 
 /* harmony default export */ __webpack_exports__["default"] = ([_objectSpread({}, _App__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  routes: [// {
-  //   ...Home,
-  //   path: "/",
-  //   exact: true
-  // },
-  _objectSpread({}, _containers_Employees__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  routes: [_objectSpread({}, _containers_Employees__WEBPACK_IMPORTED_MODULE_3__["default"], {
     path: "/"
   })]
 })]);
@@ -1307,12 +1295,7 @@ function (_Component) {
             lineNumber: 57
           }
         })));
-      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["Button"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 66
-        }
-      }, "Load More"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Footer, {
+      })))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Footer, {
         style: {
           textAlign: "center"
         },
@@ -1320,7 +1303,7 @@ function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 69
         }
-      }, "Made With love in India"));
+      }, "Made With love  in India"));
     }
   }]);
 

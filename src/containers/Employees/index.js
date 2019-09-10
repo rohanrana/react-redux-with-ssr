@@ -63,10 +63,10 @@ class Empolyees extends Component {
                 );
               })}
             </Row>
-            <Button>Load More</Button>
+           
           </div>
         </Content>
-        <Footer style={{ textAlign: "center" }}>Made With love in India</Footer>
+        <Footer style={{ textAlign: "center" }}>Made With love  in India</Footer>
       </Layout>
     );
   }
