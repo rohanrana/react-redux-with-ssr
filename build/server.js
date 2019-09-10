@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "f10b3134a03e116c5100";
+/******/ 	var hotCurrentHash = "f12815d04951330f7bc6";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1104,6 +1104,11 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
+ // This is a static route configuration. It should include all of your top level
+// routes, regardless of whether they are going to server render. In fact, you
+// can totally point multiple routes to the same component! This is great for
+// when you only need to server render a handful of routes and not your entire
+// application!
 
 /* harmony default export */ __webpack_exports__["default"] = ([_objectSpread({}, _App__WEBPACK_IMPORTED_MODULE_2__["default"], {
   routes: [_objectSpread({}, _containers_Employees__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -1597,10 +1602,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var serialize_javascript__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(serialize_javascript__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var react_router_config__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-config */ "react-router-config");
 /* harmony import */ var react_router_config__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_router_config__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-helmet */ "react-helmet");
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_7__);
 var _jsxFileName = "/home/rohanrana/Documents/Rohan /react-redux-with-ssr/src/renderer.js";
-
 
 
 
@@ -1616,19 +1618,19 @@ var assets = __webpack_require__(/*! ./build/assets.json */ "./build/assets.json
     store: store,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 14
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["StaticRouter"], {
     location: req.path,
     context: context,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 15
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 16
     }
   }, Object(react_router_config__WEBPACK_IMPORTED_MODULE_6__["renderRoutes"])(_Routes__WEBPACK_IMPORTED_MODULE_4__["default"])))));
   return "<!doctype html>\n  <html lang=\"\">\n  <head>\n      <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n      <meta charSet='utf-8' />\n      <title>Razzle Redux Example</title>\n      <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n      <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/antd/3.23.2/antd.css\" />\n      ".concat(assets.client.css ? "<link rel=\"stylesheet\" href=\"".concat(assets.client.css, "\">") : "", "\n        ").concat( false ? undefined : "<script src=\"".concat(assets.client.js, "\" defer crossorigin></script>"), "\n  </head>\n  <body>\n      <div id=\"root\">").concat(content, "</div>\n      <script>\n        window.INTIAL_STATE = ").concat(serialize_javascript__WEBPACK_IMPORTED_MODULE_5___default()(store.getState()), "\n      </script>\n  </body>\n</html>");
@@ -1659,11 +1661,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var server = express__WEBPACK_IMPORTED_MODULE_0___default()();
 server.disable("x-powered-by").use(express__WEBPACK_IMPORTED_MODULE_0___default.a["static"]("/home/rohanrana/Documents/Rohan /react-redux-with-ssr/public")).get("*", function (req, res) {
-  // console.log("REQ STORE",req)
   var store = Object(_redux_store__WEBPACK_IMPORTED_MODULE_3__["default"])(req);
   var promises = Object(react_router_config__WEBPACK_IMPORTED_MODULE_1__["matchRoutes"])(_Routes__WEBPACK_IMPORTED_MODULE_2__["default"], req.path).map(function (_ref) {
     var route = _ref.route;
-    console.log("routes", route);
     return route.loadData ? route.loadData(store) : null;
   }).map(function (promise) {
     if (promise) {
@@ -1675,7 +1675,6 @@ server.disable("x-powered-by").use(express__WEBPACK_IMPORTED_MODULE_0___default.
   Promise.all(promises).then(function () {
     var context = {};
     var content = Object(_renderer__WEBPACK_IMPORTED_MODULE_4__["default"])(req, store, context);
-    console.log("Context", context);
 
     if (context.url) {
       res.redirect(301, context.url);
@@ -1686,46 +1685,7 @@ server.disable("x-powered-by").use(express__WEBPACK_IMPORTED_MODULE_0___default.
     }
 
     res.send(content);
-  }); //     console.log("Request",req)
-  //     const context = {};
-  //     const markup = renderToString(
-  //       <Provider store={store}>
-  //         <StaticRouter context={context} location={req.url}>
-  //           <App />
-  //         </StaticRouter>
-  //       </Provider>
-  //     );
-  //     if (context.url) {
-  //       res.redirect(context.url);
-  //     } else {
-  //       res.status(200).send(
-  //         `<!doctype html>
-  //     <html lang="">
-  //     <head>
-  //         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  //         <meta charset="utf-8" />
-  //         <title>Welcome to Razzle</title>
-  //         <meta name="viewport" content="width=device-width, initial-scale=1">
-  //         ${
-  //           assets.client.css
-  //             ? `<link rel="stylesheet" href="${assets.client.css}">`
-  //             : ""
-  //         }
-  //         ${
-  //           process.env.NODE_ENV === "production"
-  //             ? `<script src="${assets.client.js}" defer></script>`
-  //             : `<script src="${assets.client.js}" defer crossorigin></script>`
-  //         }
-  //         <script>
-  //         window.INTIAL_STATE =${serialize(store.getState())}
-  //        </script>
-  //     </head>
-  //     <body>
-  //         <div id="root">${markup}</div>
-  //     </body>
-  // </html>`
-  //       );
-  //     }
+  });
 });
 /* harmony default export */ __webpack_exports__["default"] = (server);
 
@@ -1885,17 +1845,6 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom/server");
-
-/***/ }),
-
-/***/ "react-helmet":
-/*!*******************************!*\
-  !*** external "react-helmet" ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-helmet");
 
 /***/ }),
 
