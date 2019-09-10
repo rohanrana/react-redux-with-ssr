@@ -1,27 +1,19 @@
 import React from "react";
 import App from "../App";
-import Matches from "../containers/Matches";
-import Home from "../Home";
+import Employees from "../containers/Employees";
 
-// refactoring code for ssr
-// export default () => {
-//   return <div>
-//     <Route exact path="/" component={Home} />
-//     <Route path='/users' component={usersList}/>
-//   </div>;
-// };
+// This is a static route configuration. It should include all of your top level
+// routes, regardless of whether they are going to server render. In fact, you
+// can totally point multiple routes to the same component! This is great for
+// when you only need to server render a handful of routes and not your entire
+// application!
 export default [
   {
     ...App,
     routes: [
       {
-        ...Home,
-        path: "/",
-        exact: true
-      },
-      {
-        ...Matches,
-        path: "/matches"
+        ...Employees,
+        path: "/"
       }
     ]
   }
