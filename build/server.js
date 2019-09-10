@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "2813fa40096408900b34";
+/******/ 	var hotCurrentHash = "52ae500bf10c38914440";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1060,9 +1060,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_config__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
 /* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/home/rohanrana/Documents/Rohan /razzel-app/src/App.js";
+var _jsxFileName = "/home/rohanrana/Documents/Rohan /react-redux-with-ssr/src/App.js";
 
- // import 'semantic-ui-css/semantic.min.css'
 
 
 
@@ -1071,178 +1070,13 @@ var App = function App(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 5
     }
   }, Object(react_router_config__WEBPACK_IMPORTED_MODULE_1__["renderRoutes"])(route.routes));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  component: App // loadData: ({dispatch}) => dispatch(fetchCurrentUser())
-
-});
-
-/***/ }),
-
-/***/ "./src/Home.css":
-/*!**********************!*\
-  !*** ./src/Home.css ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".Home {\n  text-align: center;\n}\n\n.Home-logo {\n  animation: Home-logo-spin infinite 20s linear;\n  height: 80px;\n}\n\n.Home-header {\n  background-color: #222;\n  height: 150px;\n  padding: 20px;\n  color: white;\n}\n\n.Home-intro {\n  font-size: large;\n}\n\n.Home-resources {\n  list-style: none;\n}\n\n.Home-resources > li {\n  display: inline-block;\n  padding: 1rem;\n}\n\n@keyframes Home-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "./src/Home.js":
-/*!*********************!*\
-  !*** ./src/Home.js ***!
-  \*********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "@babel/runtime/helpers/classCallCheck");
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "@babel/runtime/helpers/createClass");
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "@babel/runtime/helpers/possibleConstructorReturn");
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "@babel/runtime/helpers/getPrototypeOf");
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "@babel/runtime/helpers/inherits");
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _react_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./react.svg */ "./src/react.svg");
-/* harmony import */ var _react_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_react_svg__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _Home_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Home.css */ "./src/Home.css");
-/* harmony import */ var _Home_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_Home_css__WEBPACK_IMPORTED_MODULE_7__);
-
-
-
-
-
-var _jsxFileName = "/home/rohanrana/Documents/Rohan /razzel-app/src/Home.js";
-
-
-
-
-var Home =
-/*#__PURE__*/
-function (_React$Component) {
-  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(Home, _React$Component);
-
-  function Home() {
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, Home);
-
-    return _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(Home).apply(this, arguments));
-  }
-
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(Home, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: "Home",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 8
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: "Home-header",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 9
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
-        src: _react_svg__WEBPACK_IMPORTED_MODULE_6___default.a,
-        className: "Home-logo",
-        alt: "logo",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 10
-        }
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h2", {
-        style: {
-          color: 'white'
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 11
-        }
-      }, "This is Built With Razzel and Integrated Redux With SSR")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
-        className: "Home-intro",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 13
-        }
-      }, "rohan ranassss2222 get started, edit ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("code", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        }
-      }, "src/App.js"), " or", ' ', react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("code", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        }
-      }, "src/Home.js"), " and save to reload."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
-        className: "Home-resources",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 17
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        href: "https://github.com/jaredpalmer/razzle",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        }
-      }, "Docs")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        href: "https://github.com/jaredpalmer/razzle/issues",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 22
-        }
-      }, "Issues")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        href: "https://palmer.chat",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 25
-        }
-      }, "Community Slack"))));
-    }
-  }]);
-
-  return Home;
-}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  component: Home
+  component: App
 });
 
 /***/ }),
@@ -1261,14 +1095,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../App */ "./src/App.js");
-/* harmony import */ var _containers_Matches__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../containers/Matches */ "./src/containers/Matches/index.js");
-/* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Home */ "./src/Home.js");
+/* harmony import */ var _containers_Employees__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../containers/Employees */ "./src/containers/Employees/index.js");
 
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
 
 
 
@@ -1281,20 +1113,22 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 // };
 
 /* harmony default export */ __webpack_exports__["default"] = ([_objectSpread({}, _App__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  routes: [_objectSpread({}, _Home__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    path: "/",
-    exact: true
-  }), _objectSpread({}, _containers_Matches__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    path: "/matches"
+  routes: [// {
+  //   ...Home,
+  //   path: "/",
+  //   exact: true
+  // },
+  _objectSpread({}, _containers_Employees__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    path: "/"
   })]
 })]);
 
 /***/ }),
 
-/***/ "./src/containers/Matches/index.js":
-/*!*****************************************!*\
-  !*** ./src/containers/Matches/index.js ***!
-  \*****************************************/
+/***/ "./src/containers/Employees/index.js":
+/*!*******************************************!*\
+  !*** ./src/containers/Employees/index.js ***!
+  \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1322,7 +1156,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/rohanrana/Documents/Rohan /razzel-app/src/containers/Matches/index.js";
+var _jsxFileName = "/home/rohanrana/Documents/Rohan /react-redux-with-ssr/src/containers/Employees/index.js";
 
 
 
@@ -1332,24 +1166,24 @@ var Header = antd__WEBPACK_IMPORTED_MODULE_8__["Layout"].Header,
     Content = antd__WEBPACK_IMPORTED_MODULE_8__["Layout"].Content,
     Footer = antd__WEBPACK_IMPORTED_MODULE_8__["Layout"].Footer;
 
-var Matches =
+var Empolyees =
 /*#__PURE__*/
 function (_Component) {
-  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(Matches, _Component);
+  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(Empolyees, _Component);
 
-  function Matches(props) {
+  function Empolyees(props) {
     var _this;
 
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, Matches);
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, Empolyees);
 
-    _this = _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(Matches).call(this, props));
+    _this = _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(Empolyees).call(this, props));
     _this.state = {
       data: []
     };
     return _this;
   }
 
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(Matches, [{
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(Empolyees, [{
     key: "componentDidMount",
     value: function componentDidMount() {
       this.props.OnDataRecevied();
@@ -1360,7 +1194,7 @@ function (_Component) {
       console.log(netxProps);
       this.setState({
         data: netxProps.data.data
-      }); // }
+      });
     }
   }, {
     key: "render",
@@ -1368,7 +1202,7 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["Layout"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 23
         }
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Header, {
         style: {
@@ -1378,13 +1212,13 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 24
         }
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "logo",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 25
         }
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["Menu"], {
         theme: "dark",
@@ -1395,13 +1229,13 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 26
         }
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["Menu"].Item, {
         key: "1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 32
         }
       }, "Razzel With Redux "))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Content, {
         style: {
@@ -1410,7 +1244,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 35
         }
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "loading_div",
@@ -1421,7 +1255,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 36
         }
       }, this.props.loading && react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["Spin"], {
         size: "large",
@@ -1429,13 +1263,13 @@ function (_Component) {
         tip: "Loading..",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 41
         }
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["Row"], {
         gutter: 16,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 43
         }
       }, this.state.data.splice(0, 10).map(function (d, index) {
         return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["Col"], {
@@ -1446,7 +1280,7 @@ function (_Component) {
           span: 6,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 54
+            lineNumber: 46
           }
         }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["Card"], {
           hoverable: true,
@@ -1458,34 +1292,39 @@ function (_Component) {
             src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 59
+              lineNumber: 51
             }
           }),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 55
+            lineNumber: 47
           }
         }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Meta, {
           title: d.employee_name,
           description: "www.instagram.com",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 65
+            lineNumber: 57
           }
         })));
-      })))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Footer, {
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["Button"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66
+        }
+      }, "Load More"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Footer, {
         style: {
           textAlign: "center"
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 69
         }
       }, "Made With love in India"));
     }
   }]);
 
-  return Matches;
+  return Empolyees;
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
 var mapStateToProps = function mapStateToProps(state) {
@@ -1510,7 +1349,7 @@ var loadData = function loadData(store) {
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   loadData: loadData,
-  component: Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps, mapDispatchToProps)(Matches)
+  component: Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps, mapDispatchToProps)(Empolyees)
 });
 
 /***/ }),
@@ -1555,17 +1394,6 @@ if (true) {
     }
   })(__WEBPACK_OUTDATED_DEPENDENCIES__); }.bind(this));
 }
-
-/***/ }),
-
-/***/ "./src/react.svg":
-/*!***********************!*\
-  !*** ./src/react.svg ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/media/react.9a28da9f.svg";
 
 /***/ }),
 
@@ -1788,7 +1616,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_config__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_router_config__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-helmet */ "react-helmet");
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "/home/rohanrana/Documents/Rohan /razzel-app/src/renderer.js";
+var _jsxFileName = "/home/rohanrana/Documents/Rohan /react-redux-with-ssr/src/renderer.js";
 
 
 
@@ -1847,7 +1675,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var server = express__WEBPACK_IMPORTED_MODULE_0___default()();
-server.disable("x-powered-by").use(express__WEBPACK_IMPORTED_MODULE_0___default.a["static"]("/home/rohanrana/Documents/Rohan /razzel-app/public")).get("*", function (req, res) {
+server.disable("x-powered-by").use(express__WEBPACK_IMPORTED_MODULE_0___default.a["static"]("/home/rohanrana/Documents/Rohan /react-redux-with-ssr/public")).get("*", function (req, res) {
   // console.log("REQ STORE",req)
   var store = Object(_redux_store__WEBPACK_IMPORTED_MODULE_3__["default"])(req);
   var promises = Object(react_router_config__WEBPACK_IMPORTED_MODULE_1__["matchRoutes"])(_Routes__WEBPACK_IMPORTED_MODULE_2__["default"], req.path).map(function (_ref) {
@@ -1929,7 +1757,7 @@ server.disable("x-powered-by").use(express__WEBPACK_IMPORTED_MODULE_0___default.
 
 __webpack_require__(/*! razzle-dev-utils/prettyNodeErrors */"razzle-dev-utils/prettyNodeErrors");
 __webpack_require__(/*! webpack/hot/poll?300 */"./node_modules/webpack/hot/poll.js?300");
-module.exports = __webpack_require__(/*! /home/rohanrana/Documents/Rohan /razzel-app/src */"./src/index.js");
+module.exports = __webpack_require__(/*! /home/rohanrana/Documents/Rohan /react-redux-with-ssr/src */"./src/index.js");
 
 
 /***/ }),

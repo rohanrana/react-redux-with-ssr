@@ -1,7 +1,7 @@
 import React from "react";
 import App from "../App";
-import Matches from "../containers/Matches";
-import Home from "../Home";
+
+import Employees from "../containers/Employees";
 
 // refactoring code for ssr
 // export default () => {
@@ -14,14 +14,14 @@ export default [
   {
     ...App,
     routes: [
+      // {
+      //   ...Home,
+      //   path: "/",
+      //   exact: true
+      // },
       {
-        ...Home,
-        path: "/",
-        exact: true
-      },
-      {
-        ...Matches,
-        path: "/matches"
+        ...Employees,
+        path: "/"
       }
     ]
   }
