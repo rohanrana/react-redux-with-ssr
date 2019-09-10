@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "f12815d04951330f7bc6";
+/******/ 	var hotCurrentHash = "f4237a46b3286c568f7b";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -760,10 +760,10 @@ module.exports =
 /*!***************************!*\
   !*** ./build/assets.json ***!
   \***************************/
-/*! exports provided: client, , default */
+/*! exports provided: client, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"client\":{\"js\":\"http://localhost:3001/static/js/bundle.js\"},\"\":{\"svg\":\"http://localhost:3001/static/media/react.9a28da9f.svg\"}}");
+module.exports = JSON.parse("{\"client\":{\"js\":\"http://localhost:3001/static/js/bundle.js\"}}");
 
 /***/ }),
 
@@ -1135,15 +1135,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "@babel/runtime/helpers/getPrototypeOf");
 /* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "@babel/runtime/helpers/inherits");
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-redux */ "react-redux");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _redux_Actions_CommonActions__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../redux/Actions/CommonActions */ "./src/redux/Actions/CommonActions.js");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! antd */ "antd");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "@babel/runtime/helpers/assertThisInitialized");
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "@babel/runtime/helpers/inherits");
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "@babel/runtime/helpers/defineProperty");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _redux_Actions_CommonActions__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../redux/Actions/CommonActions */ "./src/redux/Actions/CommonActions.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! antd */ "antd");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_10__);
+
+
 
 
 
@@ -1154,29 +1160,37 @@ var _jsxFileName = "/home/rohanrana/Documents/Rohan /react-redux-with-ssr/src/co
 
 
 
-var Meta = antd__WEBPACK_IMPORTED_MODULE_8__["Card"].Meta;
-var Header = antd__WEBPACK_IMPORTED_MODULE_8__["Layout"].Header,
-    Content = antd__WEBPACK_IMPORTED_MODULE_8__["Layout"].Content,
-    Footer = antd__WEBPACK_IMPORTED_MODULE_8__["Layout"].Footer;
+var Meta = antd__WEBPACK_IMPORTED_MODULE_10__["Card"].Meta;
+var Header = antd__WEBPACK_IMPORTED_MODULE_10__["Layout"].Header,
+    Content = antd__WEBPACK_IMPORTED_MODULE_10__["Layout"].Content,
+    Footer = antd__WEBPACK_IMPORTED_MODULE_10__["Layout"].Footer;
 
-var Empolyees =
+var Employees =
 /*#__PURE__*/
 function (_Component) {
-  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(Empolyees, _Component);
+  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_5___default()(Employees, _Component);
 
-  function Empolyees(props) {
+  function Employees(props) {
     var _this;
 
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, Empolyees);
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, Employees);
 
-    _this = _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(Empolyees).call(this, props));
+    _this = _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(Employees).call(this, props));
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this), "loadMore", function () {
+      _this.setState({
+        offset: _this.state.offset + 5
+      });
+    });
+
     _this.state = {
-      data: []
+      data: [],
+      offset: 5
     };
     return _this;
   }
 
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(Empolyees, [{
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(Employees, [{
     key: "componentDidMount",
     value: function componentDidMount() {
       this.props.OnDataRecevied();
@@ -1184,20 +1198,25 @@ function (_Component) {
   }, {
     key: "componentWillReceiveProps",
     value: function componentWillReceiveProps(netxProps) {
-      console.log(netxProps);
       this.setState({
         data: netxProps.data.data
       });
     }
   }, {
     key: "render",
+    // Right now for the only example purpose i have made all components in one file ,
+    // this must be seprate in defrent file as a individual component
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["Layout"], {
+      var _this$state = this.state,
+          offset = _this$state.offset,
+          data = _this$state.data; // console.log)
+
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Layout"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 40
         }
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Header, {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Header, {
         style: {
           position: "fixed",
           zIndex: 1,
@@ -1205,15 +1224,15 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 41
         }
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "logo",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 42
         }
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["Menu"], {
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Menu"], {
         theme: "dark",
         mode: "horizontal",
         defaultSelectedKeys: ["2"],
@@ -1222,24 +1241,24 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 43
         }
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["Menu"].Item, {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Menu"].Item, {
         key: "1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 49
         }
-      }, "Razzel With Redux "))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Content, {
+      }, "Razzel With Redux "))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Content, {
         style: {
           padding: "0 50px",
           marginTop: 64
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 52
         }
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "loading_div",
         style: {
           padding: 24,
@@ -1248,24 +1267,31 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 53
         }
-      }, this.props.loading && react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["Spin"], {
+      }, this.props.loading && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Spin"], {
         size: "large",
         spinning: true,
         tip: "Loading..",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 58
         }
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["Row"], {
+      }), !this.props.loading && data.length == 0 ? react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Result"], {
+        status: "404",
+        title: "Data Not Found",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61
+        }
+      }) : react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Row"], {
         gutter: 16,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 63
         }
-      }, this.state.data.splice(0, 10).map(function (d, index) {
-        return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["Col"], {
+      }, data.slice(0, offset).map(function (d, index) {
+        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Col"], {
           key: index,
           style: {
             marginTop: 10
@@ -1273,47 +1299,61 @@ function (_Component) {
           span: 6,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 46
+            lineNumber: 66
           }
-        }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["Card"], {
+        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Card"], {
           hoverable: true,
           style: {
             width: 240
           },
-          cover: react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+          cover: react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
             alt: "example",
             src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 51
+              lineNumber: 71
             }
           }),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 47
+            lineNumber: 67
           }
-        }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Meta, {
+        }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Meta, {
           title: d.employee_name,
           description: "www.instagram.com",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 57
+            lineNumber: 77
           }
         })));
-      })))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Footer, {
+      })), this.props.data.data !== undefined && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 89
+        }
+      }, " ", offset < this.props.data.data.length && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Button"], {
+        style: {
+          marginTop: 10
+        },
+        onClick: this.loadMore,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 92
+        }
+      }, "Load More")))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Footer, {
         style: {
           textAlign: "center"
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 100
         }
-      }, "Made With love  in India"));
+      }));
     }
   }]);
 
-  return Empolyees;
-}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+  return Employees;
+}(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
 
 var mapStateToProps = function mapStateToProps(state) {
   return {
@@ -1326,18 +1366,18 @@ var mapStateToProps = function mapStateToProps(state) {
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
     OnDataRecevied: function OnDataRecevied() {
-      return dispatch(Object(_redux_Actions_CommonActions__WEBPACK_IMPORTED_MODULE_7__["fetchData"])());
+      return dispatch(Object(_redux_Actions_CommonActions__WEBPACK_IMPORTED_MODULE_9__["fetchData"])());
     }
   };
 };
 
 var loadData = function loadData(store) {
-  return store.dispatch(Object(_redux_Actions_CommonActions__WEBPACK_IMPORTED_MODULE_7__["fetchData"])());
+  return store.dispatch(Object(_redux_Actions_CommonActions__WEBPACK_IMPORTED_MODULE_9__["fetchData"])());
 };
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   loadData: loadData,
-  component: Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps, mapDispatchToProps)(Empolyees)
+  component: Object(react_redux__WEBPACK_IMPORTED_MODULE_8__["connect"])(mapStateToProps, mapDispatchToProps)(Employees)
 });
 
 /***/ }),
@@ -1702,6 +1742,17 @@ __webpack_require__(/*! razzle-dev-utils/prettyNodeErrors */"razzle-dev-utils/pr
 __webpack_require__(/*! webpack/hot/poll?300 */"./node_modules/webpack/hot/poll.js?300");
 module.exports = __webpack_require__(/*! /home/rohanrana/Documents/Rohan /react-redux-with-ssr/src */"./src/index.js");
 
+
+/***/ }),
+
+/***/ "@babel/runtime/helpers/assertThisInitialized":
+/*!***************************************************************!*\
+  !*** external "@babel/runtime/helpers/assertThisInitialized" ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/assertThisInitialized");
 
 /***/ }),
 

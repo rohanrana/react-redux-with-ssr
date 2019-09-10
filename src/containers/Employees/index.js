@@ -1,24 +1,41 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchData } from "../../redux/Actions/CommonActions";
-import { Layout, Menu, Breadcrumb, Card, Col, Row, Spin, Button } from "antd";
+import {
+  Layout,
+  Menu,
+  Breadcrumb,
+  Card,
+  Col,
+  Row,
+  Spin,
+  Button,
+  Result
+} from "antd";
 const { Meta } = Card;
 const { Header, Content, Footer } = Layout;
-class Empolyees extends Component {
+class Employees extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: []
+      data: [],
+      offset: 5
     };
   }
   componentDidMount() {
     this.props.OnDataRecevied();
   }
   componentWillReceiveProps(netxProps) {
-    console.log(netxProps);
     this.setState({ data: netxProps.data.data });
   }
+  loadMore = () => {
+    this.setState({ offset: this.state.offset + 5 });
+  };
+  // Right now for the only example purpose i have made all components in one file ,
+  // this must be seprate in defrent file as a individual component
   render() {
+    let { offset, data } = this.state;
+    // console.log)
     return (
       <Layout>
         <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
@@ -40,33 +57,47 @@ class Empolyees extends Component {
             {this.props.loading && (
               <Spin size="large" spinning tip={"Loading.."} />
             )}
-            <Row gutter={16}>
-              {this.state.data.splice(0, 10).map((d, index) => {
-                return (
-                  <Col key={index} style={{ marginTop: 10 }} span={6}>
-                    <Card
-                      hoverable
-                      style={{ width: 240 }}
-                      cover={
-                        <img
-                          alt="example"
-                          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+            {!this.props.loading && data.length == 0 ? (
+              <Result status="404" title="Data Not Found" />
+            ) : (
+              <Row gutter={16}>
+                {data.slice(0, offset).map((d, index) => {
+                  return (
+                    <Col key={index} style={{ marginTop: 10 }} span={6}>
+                      <Card
+                        hoverable
+                        style={{ width: 240 }}
+                        cover={
+                          <img
+                            alt="example"
+                            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+                          />
+                        }
+                      >
+                        <Meta
+                          title={d.employee_name}
+                          description="www.instagram.com"
                         />
-                      }
-                    >
-                      <Meta
-                        title={d.employee_name}
-                        description="www.instagram.com"
-                      />
-                    </Card>
-                  </Col>
-                );
-              })}
-            </Row>
-           
+                      </Card>
+                    </Col>
+                  );
+                })}
+              </Row>
+            )}
+
+            {this.props.data.data !== undefined && (
+              <div>
+                {" "}
+                {offset < this.props.data.data.length && (
+                  <Button style={{ marginTop: 10 }} onClick={this.loadMore}>
+                    Load More
+                  </Button>
+                )}
+              </div>
+            )}
           </div>
         </Content>
-        <Footer style={{ textAlign: "center" }}>Made With love  in India</Footer>
+        <Footer style={{ textAlign: "center" }}></Footer>
       </Layout>
     );
   }
@@ -92,5 +123,5 @@ export default {
   component: connect(
     mapStateToProps,
     mapDispatchToProps
-  )(Empolyees)
+  )(Employees)
 };
