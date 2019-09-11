@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "f4237a46b3286c568f7b";
+/******/ 	var hotCurrentHash = "671b3f22e60de9248c01";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1070,7 +1070,7 @@ var App = function App(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     }
   }, Object(react_router_config__WEBPACK_IMPORTED_MODULE_1__["renderRoutes"])(route.routes));
 };
@@ -1148,6 +1148,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _redux_Actions_CommonActions__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../redux/Actions/CommonActions */ "./src/redux/Actions/CommonActions.js");
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! antd */ "antd");
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var react_redux_loading_bar__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-redux-loading-bar */ "react-redux-loading-bar");
+/* harmony import */ var react_redux_loading_bar__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react_redux_loading_bar__WEBPACK_IMPORTED_MODULE_11__);
 
 
 
@@ -1156,6 +1158,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/home/rohanrana/Documents/Rohan /react-redux-with-ssr/src/containers/Employees/index.js";
+
 
 
 
@@ -1214,7 +1217,7 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Layout"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 42
         }
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Header, {
         style: {
@@ -1224,13 +1227,13 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 43
         }
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "logo",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 46
         }
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Menu"], {
         theme: "dark",
@@ -1241,13 +1244,13 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 47
         }
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Menu"].Item, {
         key: "1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 53
         }
       }, "Razzel With Redux "))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Content, {
         style: {
@@ -1256,7 +1259,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 56
         }
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "loading_div",
@@ -1267,7 +1270,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 57
         }
       }, this.props.loading && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Spin"], {
         size: "large",
@@ -1275,20 +1278,20 @@ function (_Component) {
         tip: "Loading..",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 62
         }
       }), !this.props.loading && data.length == 0 ? react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Result"], {
         status: "404",
         title: "Data Not Found",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 65
         }
       }) : react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Row"], {
         gutter: 16,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 67
         }
       }, data.slice(0, offset).map(function (d, index) {
         return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Col"], {
@@ -1299,7 +1302,7 @@ function (_Component) {
           span: 6,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 66
+            lineNumber: 70
           }
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Card"], {
           hoverable: true,
@@ -1311,25 +1314,25 @@ function (_Component) {
             src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 71
+              lineNumber: 75
             }
           }),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 67
+            lineNumber: 71
           }
         }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Meta, {
           title: d.employee_name,
           description: "www.instagram.com",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 77
+            lineNumber: 81
           }
         })));
       })), this.props.data.data !== undefined && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 93
         }
       }, " ", offset < this.props.data.data.length && react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_10__["Button"], {
         style: {
@@ -1338,7 +1341,7 @@ function (_Component) {
         onClick: this.loadMore,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 96
         }
       }, "Load More")))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Footer, {
         style: {
@@ -1346,9 +1349,10 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 104
         }
       }));
+      "";
     }
   }]);
 
@@ -1658,19 +1662,19 @@ var assets = __webpack_require__(/*! ./build/assets.json */ "./build/assets.json
     store: store,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 11
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["StaticRouter"], {
     location: req.path,
     context: context,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 12
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 13
     }
   }, Object(react_router_config__WEBPACK_IMPORTED_MODULE_6__["renderRoutes"])(_Routes__WEBPACK_IMPORTED_MODULE_4__["default"])))));
   return "<!doctype html>\n  <html lang=\"\">\n  <head>\n      <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n      <meta charSet='utf-8' />\n      <title>Razzle Redux Example</title>\n      <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n      <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/antd/3.23.2/antd.css\" />\n      ".concat(assets.client.css ? "<link rel=\"stylesheet\" href=\"".concat(assets.client.css, "\">") : "", "\n        ").concat( false ? undefined : "<script src=\"".concat(assets.client.js, "\" defer crossorigin></script>"), "\n  </head>\n  <body>\n      <div id=\"root\">").concat(content, "</div>\n      <script>\n        window.INTIAL_STATE = ").concat(serialize_javascript__WEBPACK_IMPORTED_MODULE_5___default()(store.getState()), "\n      </script>\n  </body>\n</html>");
@@ -1701,7 +1705,10 @@ __webpack_require__.r(__webpack_exports__);
 
 var server = express__WEBPACK_IMPORTED_MODULE_0___default()();
 server.disable("x-powered-by").use(express__WEBPACK_IMPORTED_MODULE_0___default.a["static"]("/home/rohanrana/Documents/Rohan /react-redux-with-ssr/public")).get("*", function (req, res) {
-  var store = Object(_redux_store__WEBPACK_IMPORTED_MODULE_3__["default"])(req);
+  //server side configuring store
+  var store = Object(_redux_store__WEBPACK_IMPORTED_MODULE_3__["default"])(req); // itrating routes and get its component and
+  // associated functions to set data at server side
+
   var promises = Object(react_router_config__WEBPACK_IMPORTED_MODULE_1__["matchRoutes"])(_Routes__WEBPACK_IMPORTED_MODULE_2__["default"], req.path).map(function (_ref) {
     var route = _ref.route;
     return route.loadData ? route.loadData(store) : null;
@@ -1711,7 +1718,8 @@ server.disable("x-powered-by").use(express__WEBPACK_IMPORTED_MODULE_0___default.
         promise.then(resolve)["catch"](resolve);
       });
     }
-  });
+  }); // making process parallel for each route to be hit.
+
   Promise.all(promises).then(function () {
     var context = {};
     var content = Object(_renderer__WEBPACK_IMPORTED_MODULE_4__["default"])(req, store, context);
@@ -1907,6 +1915,17 @@ module.exports = require("react-dom/server");
 /***/ (function(module, exports) {
 
 module.exports = require("react-redux");
+
+/***/ }),
+
+/***/ "react-redux-loading-bar":
+/*!******************************************!*\
+  !*** external "react-redux-loading-bar" ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-redux-loading-bar");
 
 /***/ }),
 

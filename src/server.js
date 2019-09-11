@@ -7,10 +7,12 @@ const server = express();
 
 server
   .disable("x-powered-by")
-  .use(express.static(process.env.RAZZLE_PUBLIC_DIR))
+  .use(express.static(process.env.RAZZLE_PUBLIC_DIR)) 
   .get("*", (req, res) => {
+    //server side configuring store
     const store = createStore(req);
-
+    // itrating routes and get its component and
+    // associated functions to set data at server side
     const promises = matchRoutes(Routes, req.path)
       .map(({ route }) => {
         return route.loadData ? route.loadData(store) : null;
@@ -22,6 +24,8 @@ server
           });
         }
       });
+
+    // making process parallel for each route to be hit.
     Promise.all(promises).then(() => {
       const context = {};
       const content = renderer(req, store, context);

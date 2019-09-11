@@ -12,6 +12,8 @@ import {
   Button,
   Result
 } from "antd";
+import LoadingBar from "react-redux-loading-bar";
+
 const { Meta } = Card;
 const { Header, Content, Footer } = Layout;
 class Employees extends Component {
@@ -39,6 +41,8 @@ class Employees extends Component {
     return (
       <Layout>
         <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
+      {/* <LoadingBar/> */}
+
           <div className="logo" />
           <Menu
             theme="dark"
@@ -99,7 +103,7 @@ class Employees extends Component {
         </Content>
         <Footer style={{ textAlign: "center" }}></Footer>
       </Layout>
-    );
+    );``
   }
 }
 const mapStateToProps = state => {

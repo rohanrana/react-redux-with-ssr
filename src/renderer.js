@@ -6,9 +6,6 @@ import Routes from "./Routes";
 import serialize from "serialize-javascript";
 import { renderRoutes } from "react-router-config";
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
-
-
-
 export default (req, store, context) => {
   const content = renderToString(
     <Provider store={store}>
