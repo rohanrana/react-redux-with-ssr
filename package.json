@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "antd": "^3.23.2",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "prop-types": "^15.7.2",
     "razzle": "^3.0.0",
